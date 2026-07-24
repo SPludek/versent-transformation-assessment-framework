@@ -417,43 +417,43 @@ const moduleB = [
     ]},
   ]},
   { section:7, sectionTitle:"Processes & Ways of Working", sectionSub:"", questions:[
-    { id:"b7", text:"Will day-to-day workflows change?", options:[
-      {main:"No workflow change", sub:""},
-      {main:"Minor process updates", sub:""},
-      {main:"Moderate cross-team workflow changes", sub:""},
-      {main:"Significant new ways of working required", sub:""}
+    { id:"b7", text:"How much process design or redesign is required?", options:[
+      {main:"No change", sub:"Existing processes can support the proposed change."},
+      {main:"Limited change", sub:"Some process steps, approvals or procedures need to be updated."},
+      {main:"Changes to key processes", sub:"One or more important processes need to be redesigned, including some that span multiple teams."},
+      {main:"Major redesign", sub:"Several connected processes or the overall way work is delivered need to be redesigned."}
     ]},
-    { id:"b8", text:"Are handoffs between teams changing?", options:[
-      {main:"No handoff changes", sub:""},
-      {main:"Minor handoff clarification", sub:""},
-      {main:"Multiple handoffs need redesign", sub:""},
-      {main:"Complex handoffs across many teams", sub:""}
+    { id:"b8", text:"How much does collaboration and coordination between teams need to change?", options:[
+      {main:"No change", sub:"Teams can continue to coordinate and work together as they do today."},
+      {main:"Limited change", sub:"Some handoffs, dependencies or points of contact need to be clarified."},
+      {main:"Changes to coordination", sub:"Teams need new or updated ways to share information, coordinate work or manage dependencies."},
+      {main:"Major redesign", sub:"Collaboration and coordination across several teams need to be substantially redesigned."}
     ]},
-    { id:"b9", text:"Will BAU support or service ownership change?", options:[
-      {main:"No BAU impact", sub:""},
-      {main:"Minor BAU clarification", sub:""},
-      {main:"BAU responsibilities changing for some teams", sub:""},
-      {main:"New BAU/service model required", sub:""}
+    { id:"b9", text:"How much work is required to incorporate customer or user needs and feedback into ways of working?", options:[
+      {main:"Already established", sub:"Customer or user needs and feedback already shape priorities, delivery and improvement."},
+      {main:"A few improvements needed", sub:"Existing feedback methods work, but some measures, feedback points or responsibilities need clarification."},
+      {main:"Some design required", sub:"Clearer ways to collect, assess and respond to customer or user feedback need to be developed."},
+      {main:"Major design required", sub:"There is no consistent way for customer or user needs to influence priorities, decisions or improvements."}
     ]},
   ]},
-  { section:8, sectionTitle:"Controls, Data & Tooling Interaction", sectionSub:"", questions:[
-    { id:"b10", text:"Are policy, control or compliance responsibilities changing?", options:[
-      {main:"No change", sub:""},
-      {main:"Minor clarification of expectations", sub:""},
-      {main:"New control responsibilities for some teams", sub:""},
-      {main:"Significant control/accountability redesign", sub:""}
+  { section:8, sectionTitle:"Measures, technology and data", sectionSub:"", questions:[
+    { id:"b10", text:"How much work is required to define how performance, success and value will be measured and reviewed?", options:[
+      {main:"Already defined", sub:"Measures, targets, owners and review processes are established and used to support decisions."},
+      {main:"A few details to clarify", sub:"Measures exist, but some definitions, targets, owners or reporting requirements need clarification."},
+      {main:"Some design required", sub:"Important measures, targets or performance-review arrangements need to be developed."},
+      {main:"Major design required", sub:"There is no agreed view of success or value, or how performance will be measured and reviewed."}
     ]},
-    { id:"b11", text:"Is data or metadata ownership required to support the model?", options:[
-      {main:"No data ownership impact", sub:""},
-      {main:"Existing ownership is sufficient", sub:""},
-      {main:"Some data ownership clarification required", sub:""},
-      {main:"Data ownership is critical and currently unclear", sub:""}
+    { id:"b11", text:"How much work is required to define ongoing technology ownership, support and maintenance?", options:[
+      {main:"Already defined", sub:"Technology ownership, support arrangements, maintenance responsibilities and escalation paths are established."},
+      {main:"A few details to clarify", sub:"The overall approach is suitable, but some ownership, support, maintenance or escalation paths need clarification."},
+      {main:"Some design required", sub:" Important parts of the technology ownership, support and maintenance model need to be developed or changed."},
+      {main:"Major design required", sub:"A new operating and support model is required for the technology or capability."}
     ]},
-    { id:"b12", text:"Will teams need to interact differently with enterprise tools or reporting?", options:[
-      {main:"No change", sub:""},
-      {main:"Minor visibility/reporting updates", sub:""},
-      {main:"New responsibilities for reviewing or acting on information", sub:""},
-      {main:"New tool interaction model required across teams", sub:""}
+    { id:"b12", text:"How much work is required to define who owns the data and how it will be managed, reported and used to make decisions?", options:[
+      {main:"Already defined ", sub:"Data owners are known, the data is managed and reported appropriately, and teams know how to use it for key decisions."},
+      {main:"A few details to clarify", sub:"Data ownership, reporting and use are mostly clear, with a small number of gaps to resolve."},
+      {main:"Some design required", sub:"Data owners, reporting needs or the use of data in key decisions need to be defined or improved."},
+      {main:"Major design required", sub:"There is no consistent approach to owning, managing or reporting data, or using it to make decisions."}
     ]},
   ]},
 ];
@@ -692,7 +692,7 @@ document.getElementById('calcBtn').addEventListener('click', () => {
   const resultsEl = document.getElementById('results');
   resultsEl.innerHTML = `
     <div class="results-head">
-      <h2>Your Transformation Profile</h2>
+      <h2>Your Sizing Profile</h2>
       <p>Combined result from Module A (Change Complexity) and Module B (Operating Model Complexity)</p>
     </div>
 
