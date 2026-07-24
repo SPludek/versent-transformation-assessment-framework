@@ -267,7 +267,7 @@
 
   <div class="module-intro">
     <span class="module-tag b">Module B — Operating Model Complexity</span>
-    <h2 style="margin-top:14px;">Operating Model Assessment</h2>
+    <h2 style="margin-top:14px;">Operating Model Sizing</h2>
     <p>Answer 12 questions about roles, responsibilities, governance, decision-making and ways of working to understand whether your initiative requires light operating model alignment, targeted design, or a full operating model workstream.</p>
     <div class="stats" style="margin-top:24px;">
       <div class="stat"><div class="num" style="color:var(--teal);">2×</div><div class="lbl">Typical potential to improve decision effectiveness</div></div>
@@ -397,23 +397,23 @@ const moduleB = [
     ]},
   ]},
   { section:6, sectionTitle:"Governance & Decision-Making", sectionSub:"", questions:[
-    { id:"b4", text:"Will governance forums or decision pathways change?", options:[
-      {main:"No governance changes", sub:""},
-      {main:"Existing forums can be used", sub:""},
-      {main:"Some new decision pathways required", sub:""},
-      {main:"New governance model required", sub:""}
+    { id:"b4", text:"How much work is required to define accountability for outcomes and areas of work?", options:[
+      {main:"Already defined", sub:"Accountability for key outcomes and areas of work is understood and agreed."},
+      {main:"A few gaps", sub:"Most accountability is clear, with a small number of gaps or overlaps to resolve."},
+      {main:"Some definition required", sub:"Accountability for several important outcomes or areas of work needs to be assigned or changed."},
+      {main:"Major definition required", sub:"Accountability is largely unclear, disputed or spread across multiple teams."}
     ]},
-    { id:"b5", text:"Are escalation pathways clear?", options:[
-      {main:"Clear and already operating well", sub:""},
-      {main:"Mostly clear but informal", sub:""},
-      {main:"Escalations vary by team", sub:""},
-      {main:"Escalation pathways are unclear or missing", sub:""}
+    { id:"b5", text:"How much work is required to define decision-making, approvals and escalation paths?", options:[
+      {main:"Already defined", sub:"Key decisions, decision owners, approval steps and escalation paths are understood and agreed."},
+      {main:"A few details to clarify", sub:"The overall approach works, but some decision owners, approvals or escalation points need clarification."},
+      {main:"Some design required", sub:"Several important decisions need clear owners, approval steps or escalation paths."},
+      {main:"Major design required", sub:"A new approach to decision-making, approvals and escalation needs to be designed."}
     ]},
-    { id:"b6", text:"Will decisions move between teams or levels?", options:[
-      {main:"No change to decision rights", sub:""},
-      {main:"Minor clarification only", sub:""},
-      {main:"Some decisions shift between teams", sub:""},
-      {main:"Significant decision-rights redesign required", sub:""}
+    { id:"b6", text:"How much work is required to define how priorities and trade-offs will be managed?", options:[
+      {main:"Already defined", sub:"Priorities, decision criteria and the approach to resolving trade-offs are understood and agreed."},
+      {main:"A few details to clarify", sub:"The overall approach exists, but some priority rules or decision criteria need clarification."},
+      {main:"Some design required", sub:"A clearer approach is needed to set priorities, sequence work and resolve competing demands."},
+      {main:"Major design required", sub:"Priorities are conflicting or unclear, with no agreed way to make or resolve trade-offs."}
     ]},
   ]},
   { section:7, sectionTitle:"Processes & Ways of Working", sectionSub:"", questions:[
